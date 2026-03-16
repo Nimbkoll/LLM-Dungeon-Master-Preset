@@ -84,6 +84,6 @@ This preset is probably not for you if you:
 
 --------
 
-**Preset:** https://github.com/Nimbkoll/LLM-Dungeon-Master-Preset/releases/tag/SFW
+**Preset:** https://github.com/Nimbkoll/LLM-Dungeon-Master-Preset/releases
 
 **Byte Bandit the DM Hacker** (Tutorial Card): https://github.com/Nimbkoll/LLM-Dungeon-Master-Preset/blob/main/Byte%20Bandit%20the%20DM%20Hacker.png?raw=true
