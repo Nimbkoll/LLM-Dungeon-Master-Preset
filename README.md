@@ -1,5 +1,5 @@
 
-![image](https://user-images.githubusercontent.com/...)
+![image](Byte Bandit the DM Hacker.png)
 
 
 Over months, I made this preset entirely for my own enjoyment. Instead of psychological simulation and banning slop words, **Dungeon Master**, just like the name suggests, focuses on story generation.
