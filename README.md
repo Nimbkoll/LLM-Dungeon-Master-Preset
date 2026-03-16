@@ -73,3 +73,17 @@ Transforms the AI into a narrator. Instead of playing one character, the AI embo
 This preset is probably not for you if you:
 - Only want to chat with one person in a void
 - Don't want to manage toggles or modules
+
+--------
+**Recommended Model:** Claude 4.6 Sonnet / Opus, Gemini 3.1 Pro, GLM 5, Qwen3.5 35B-A3B (Local)
+
+**Minimal / Default Setup:**
+- Writing Guide: ON
+- Narrative Voice: Pick ONE
+- CoT Short: ON
+
+--------
+
+**Preset:** https://github.com/Nimbkoll/LLM-Dungeon-Master-Preset/releases/tag/SFW
+
+**Byte Bandit the DM Hacker** (Tutorial Card): https://github.com/Nimbkoll/LLM-Dungeon-Master-Preset/blob/main/Byte%20Bandit%20the%20DM%20Hacker.png?raw=true
