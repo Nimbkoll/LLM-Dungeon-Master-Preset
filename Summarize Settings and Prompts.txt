@@ -1,9 +1,7 @@
 ### Settings
 - **Summarize with:** Main API
-- **Pause:** Off
-- **No WI/AN:** Off
 - **Prompt Builder:** Classic, blocking
-- **Taget Summary Length:** 1000
+- **Taget Summary Length:** Irrelevant
 - **API Response Length:** 4096 or 0 for default
 - **Other Settings:** Adjust according to needs
 
