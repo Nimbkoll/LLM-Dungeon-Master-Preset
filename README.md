@@ -1,3 +1,8 @@
+> [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+> 
+> **License:** All assets in this repository, including but not limited to images, text, and prompts, are dedicated to the public domain under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/).
+
+
 ![Image](https://github.com/Nimbkoll/LLM-Dungeon-Master-Preset/blob/main/Byte%20Bandit%20the%20DM%20Hacker.png)
 
 
