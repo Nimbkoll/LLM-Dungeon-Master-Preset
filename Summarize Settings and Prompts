@@ -9,7 +9,7 @@
 
 ### Injection Template
 - **Prompt:**
-```markdown
+```
 <Summary:_Past_Events_of_Conversation>
 [Some of the conversation history might be pushed out of the context window, This is a summary of the current session for you to reference. If contradictory elements exists, prioritize the actual chat log over this summary]
 {{summary}}
@@ -19,7 +19,7 @@
 
 ### Summary Prompt
 - **Prompt:**
-```markdown
+```
 (We are going to pause. You are now tasked with summarizing the conversation so far, strictly adhering to the following guidelines, process, and examples.)
 
 <Summary_Guidelines>
