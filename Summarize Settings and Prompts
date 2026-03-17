@@ -1,0 +1,116 @@
+### Settings
+- **Summarize with:** Main API
+- **Pause:** Off
+- **No WI/AN:** Off
+- **Prompt Builder:** Classic, blocking
+- **Taget Summary Length:** 1000
+- **API Response Length:** 4096
+- **Other Settings:** Adjust according to needs
+
+### Injection Template
+- **Prompt:**
+```markdown
+<Summary:_Past_Events_of_Conversation>
+[Some of the conversation history might be pushed out of the context window, This is a summary of the current session for you to reference. If contradictory elements exists, prioritize the actual chat log over this summary]
+{{summary}}
+</Summary:_Past_Events_of_Conversation>
+```
+- **Injection Position:** After Main Prompt / Story String
+
+### Summary Prompt
+- **Prompt:**
+```markdown
+(We are going to pause. You are now tasked with summarizing the conversation so far, strictly adhering to the following guidelines, process, and examples.)
+
+<Summary_Guidelines>
+**Operational Scope:**
+Summarize the entire conversation history focusing on past events only. Do NOT include current statuses, pending actions, ongoing situations, or unresolved threads. Do NOT speculate on future events or the ending.
+
+**Data Integration:**
+Identify if a summary of past events already exists within the context. If so, you must integrate it alongside the new conversation history, updating and expanding the legacy data with the newly extracted information.
+
+**Asset Identification & Profiling:**
+Identify the most important elements of the story, including:
+- Key Characters: Name, role, gender, species, appearance, and personality. Omit disposable background NPCs. A key character is anyone who directly impacts the plot through significant actions or dialogue.
+- Significant Actions: Major decisions or actions taken by key characters.
+- Major Items: Items that played a significant role in the story or are unique to the setting. Include the current owner.
+- Major Locations: Places where major events have taken place. Omit places only briefly visited. Describe the location and its contents, excluding the events that happened there.
+- Major Events: Major plot points alongside their cause and effect.
+
+**Standardized Output Structure:**
+Use the exact titles: `### Characters`, `### Major Actions Performed by Characters`, `### Major Items`, `### Major Locations`, and `### Major Events - Chronological Order`.
+You must utilize the following proprietary format for each category:
+- Characters: Use 20 to 70 words to describe each key character. Format in a new `List<character>`: `name<character> {role, gender, species, appearances separated by +, personalities separated by +};` (Example: `Alex<character> {Ship Engineer, Male, Elf, Black hair + Brown eyes + Wear thick glasses and a shirt, Shy + Easily startled + Stuttered speech + Loves the outdoors};`)
+- Major Actions: Use 5 to 20 words to describe each individual action. Format in a new `List<action>`: `name<action> {actions separated by +};` Actions must be in chronological order. (Example: `Alex<action> {Shoved Jamie causing injury + Activated a time bomb causing whole ship to hate him + Redeemed himself with time travel to avert crisis};`)
+- Major Items: Use 5 to 30 words to describe each item. Format in a new `List<item>`: `name<item> {current owner, description of item};` (Example: `Chrono_Trigger<item> {Alex, A pocket watch capable of freezing time for 5 seconds};`)
+- Major Locations: Use 10 to 60 words to describe each location. Format in a new `List<location>`: `name<location> {description};` (Example: `City_17<location> {A European City occupied by alien soldiers, people who live here are oppressed};`)
+- Major Events: Use 10 to 60 words to describe each event. Format in a new `List<event>`: `name<event> {description};` Events must be in chronological order. (Example: `Resonance_Cascade<event> {Science experiment gone wrong, Aliens come out of portal, Laboratory Destroyed};`)
+
+**Content Style Guide:**
+Use clear and concise language, avoiding unnecessary details or dialogue. Do not skip over important details. Conciseness is prioritized; improper grammar is permissible as long as the text remains highly readable.
+</Summary_Guidelines>
+
+<Summary_Process>
+Execute the following steps internally before generating your final response. Do NOT output this process.
+1. Data Extraction: Parse the entire chat history and any pre-existing summary. Identify all key characters, actions, items, locations, and events. Extract sufficient detail to ensure the final summary provides complete context for a reader with zero prior knowledge of the story.
+2. Conflict Resolution: If new messages contradict the old summary, update the facts using the newest data as canonical. Always prioritize the most recently stated information.
+3. Formatting Application: Structure the extracted data strictly into the proprietary `name<type> {attributes};` syntax under the correct categorical headers.
+4. Internal Audit: Run your drafted summary through the `<internal_checklist>`. You must loop this step silently, discarding and regenerating the draft until every single check yields a PASS.
+5. Final Output: Once all checks pass, output ONLY the finalized standardized summary. Do NOT wrap your response in parentheses. Do NOT include any acknowledgements, greetings, conversational filler, or explanations.
+</Summary_Process>
+
+<internal_checklist>
+Check_1: Prior Summary Inclusion
+- Objective: Complete integration of legacy data.
+- Process: Does the new draft INCLUDE, BUILD UPON, and CORRECT all assets (characters, actions, items, locations, events) from the previous summary?
+!!! It is **EXTREMELY IMPORTANT** to cross-reference the old summary with the new draft. Ensure absolutely zero legacy data is lost unless explicitly overridden by recent events. !!!
+- Result: PASS/FAIL
+
+Check_2: Schema Integrity
+- Objective: Strict adherence to proprietary syntax.
+- Process: Does every single entry perfectly match the `name<type> {attributes};` format? Are separators (`+`, `,`) applied correctly without forbidden markdown?
+- Result: PASS/FAIL
+
+Check_3: Data Fidelity
+- Objective: Accurate sourcing, retention, and conflict resolution.
+- Process: Is all retained data accurate to the old summary? Is all newly added data sourced directly and exclusively from the recent chat log? Did you fix all conflicting data and errors?
+- Result: PASS/FAIL
+
+Check_4: Constraint Compliance
+- Objective: Eradication of forbidden content.
+- Process: Is the draft completely free of current status updates, pending actions, unresolved threads, and future speculation?
+- Result: PASS/FAIL
+
+Check_5: Chronological Accuracy
+- Objective: Timeline verification.
+- Process: Are the `List<action>` and `List<event>` entries ordered perfectly from earliest to most recent?
+- Result: PASS/FAIL
+
+Check_6: Completeness Audit
+- Objective: Zero critical omissions.
+- Process: Have all major characters, significant actions, key items, major locations, and major events been accounted for without skipping vital context?
+- Result: PASS/FAIL
+</internal_checklist>
+
+I will now provide an example of a good summary:
+
+### Characters
+Alex<character> {Ship Engineer, Male, Elf, Black hair + Brown eyes + Wear thick glasses and a shirt, Shy + Easily startled + Stuttered speech + Loves the outdoors};
+Jamie<character> {Chef, Male, Dwarf, Brown hair + Wear a coat + Pale skin, Charismatic + Hates chicken nugget + Loud voice};
+
+### Major Actions Performed by Characters
+Alex<action> {Shoved Jamie causing injury + Activated a time bomb causing whole ship to hate him + Redeemed himself with time travel to avert crisis};
+Jamie<action> {Destroyed all chicken nuggets on the ship + Invented food synthesizer + Found Candy Island};
+
+### Major Items
+Food_Synthesizer<item> {Jamie, A machine capable of creating any non-chicken food item instantly};
+Time_Bomb<item> {Destroyed, An explosive device linked to the ship's chronometer};
+
+### Major Locations
+City_17<location> {A European city occupied by alien soldiers, people who live here are oppressed.};
+Candy_Island<location> {An island made of candy, featuring chocolate lakes and popsicle trees.};
+
+### Major Events - Chronological Order
+Resonance_Cascade<event> {Science experiment in Black Mesa laboratory gone wrong causing aliens to come out of portal. Laboratory destroyed.};
+Parting_Red_Sea<event> {Moses used magic to carve a path through the water to escape Egyptian pursuit.};
+```
