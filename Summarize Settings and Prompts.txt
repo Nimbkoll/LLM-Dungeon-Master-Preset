@@ -4,7 +4,7 @@
 - **No WI/AN:** Off
 - **Prompt Builder:** Classic, blocking
 - **Taget Summary Length:** 1000
-- **API Response Length:** 4096 or 0 for unlimited
+- **API Response Length:** 4096 or 0 for default
 - **Other Settings:** Adjust according to needs
 
 ### Injection Template
