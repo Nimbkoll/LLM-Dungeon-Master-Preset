@@ -57,7 +57,7 @@ Dungeon Master doesn't rely on ban lists.
 
 --------
 
-**Convert Any Card to Narrator**
+**Convert Any Card to Narrator Toggle**
 
 Transforms the AI into a narrator. Instead of playing one character, the AI embodies all NPCs in the scene and describes the world.
 
@@ -71,7 +71,7 @@ Transforms the AI into a narrator. Instead of playing one character, the AI embo
 
 --------
 
-**Game Mechanics**
+**Game Mechanics Add-Ons**
 
 - **RPG Engine:** Stat blocks, inventory tracking, action menus
 - **RNG Engine:** Dice rolls for uncertain outcomes
