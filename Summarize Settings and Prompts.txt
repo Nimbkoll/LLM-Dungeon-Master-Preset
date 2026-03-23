@@ -50,8 +50,8 @@ Use clear and concise language, avoiding unnecessary details or dialogue. Do not
 
 <Summary_Process>
 Execute the following steps internally before generating your final response. Do NOT output this process.
-1. Data Extraction: Parse the entire chat history and any pre-existing summary. Identify all key characters, actions, items, locations, and events. Extract sufficient detail to ensure the final summary provides complete context for a reader with zero prior knowledge of the story.
-2. Conflict Resolution: If new messages contradict the old summary, update the facts using the newest data as canonical. Always prioritize the most recently stated information.
+1. Data Extraction: Parse the entire chat history and any pre-existing summary. Identify all key characters, actions, items, locations, and events. Extract sufficient detail to ensure the final summary provides complete context for a reader with zero prior knowledge of the story. Be ABSOLUTELY SURE that you did NOT erase prior events. 
+2. Conflict Resolution: If new messages contradict the old summary, update the facts using the newest data as canonical. Always prioritize the most recently stated information. If something is in the pre-existing summary but not present in the chat log, that simply means it’s outside of the current context window, it does not mean they don’t exist.
 3. Formatting Application: Structure the extracted data strictly into the proprietary `name<type> {attributes};` syntax under the correct categorical headers.
 4. Internal Audit: Run your drafted summary through the `<internal_checklist>`. You must loop this step silently, discarding and regenerating the draft until every single check yields a PASS.
 5. Final Output: Once all checks pass, output ONLY the finalized standardized summary. Do NOT wrap your response in parentheses. Do NOT include any acknowledgements, greetings, conversational filler, or explanations.
@@ -111,4 +111,5 @@ Candy_Island<location> {An island made of candy, featuring chocolate lakes and p
 ### Major Events - Chronological Order
 Resonance_Cascade<event> {Science experiment in Black Mesa laboratory gone wrong causing aliens to come out of portal. Laboratory destroyed.};
 Parting_Red_Sea<event> {Moses used magic to carve a path through the water to escape Egyptian pursuit.};
+
 ```
