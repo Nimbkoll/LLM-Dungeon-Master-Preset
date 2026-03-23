@@ -2,6 +2,7 @@
 > 
 > [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 
+**This is a preset for SillyTavern:** A preset is a collection of prompts. I designed them to be modular in nature. 
 
 ![Image](https://github.com/Nimbkoll/LLM-Dungeon-Master-Preset/blob/main/Byte%20Bandit%20the%20DM%20Hacker.png)
 
