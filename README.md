@@ -66,8 +66,8 @@ Transforms the AI into a narrator. Instead of playing one character, the AI embo
 **Quality Control Add-Ons**
 
 - **Describe User Actions:** For lazy users, expands short user posts into detailed prose
-- **Cliche Nullification:** Bans AI-isms if you are still seeing them. Usually Narrative Voice alone does the job
 - **Hyper modules:** For over-the-top fights, flanderization, or cartoon logic
+- **Grounded NPCs:** Reduce AI misinterpretation of characters that leads to genre trope based stories. 
 
 --------
 
