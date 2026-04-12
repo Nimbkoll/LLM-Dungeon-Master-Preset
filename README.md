@@ -52,7 +52,7 @@ Enable one. The entire narrative voice shifts:
 - **Brainrot:** Chronically online, cringe.
 *"A whole dragon just spawned in. Chat, is this real? We are actually cooked."*
 
-**... and more, totalling 11 voices to choose from.**
+**... and more, totalling 13 voices to choose from.**
 Dungeon Master doesn't rely on ban lists.
 
 --------
