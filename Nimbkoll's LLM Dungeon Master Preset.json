@@ -1,5 +1,4 @@
 {
-    "extensions": {},
     "temperature": 0.8,
     "frequency_penalty": 0,
     "presence_penalty": 0,
@@ -484,20 +483,6 @@
             "content": "",
             "injection_position": 1,
             "injection_depth": 0,
-            "injection_order": 100,
-            "injection_trigger": [],
-            "forbid_overrides": false
-        },
-        {
-            "identifier": "c1c5a208-870b-4406-849f-fb579ceb38b2",
-            "system_prompt": false,
-            "enabled": false,
-            "marker": false,
-            "name": "➕Cliché Nullification (Ban AI-isms)",
-            "role": "system",
-            "content": "<Cliché_Nullification_Protocol>\n// Supplement to Writing Guide.\n// TRIGGER CONDITION: Active at all times.\n// OVERRIDE: Strict prohibition of specific \"LLM-isms,\" lazy prose shortcuts, and repetitive somatic loops.\n\n**I. SENSORY & SOMATIC CONTROL (The \"Body & Physics\" Bans)**\n*   **Rule 1 (Olfactory/Auditory Bans):**\n    *   **No \"Ozone\":** Do not use \"ozone\" to describe magic/energy.\n        *   *Instead:* Use grounded terms: copper taste, static raising hair, smell of singed dust/plastic/sulfur, or air turning crisp.\n    *   **No \"Guttural Roars\":** The word \"guttural\" is forbidden when describing vocalizations during intimacy or combat.\n        *   *Instead:* Describe the texture of the sound: rough, grinding, wet, tearing, deep, or cracking.\n    *   **No \"Chest Rumbles\":** Do not describe a laugh or voice \"rumbling in his chest\" such that the other character feels the vibration.\n        *   *Instead:* Use functional sensory description: Focus on the auditory quality (gravel, bass, baritone) or visible physical mechanics (shoulders heaving, throat bobbing, chest expanding).\n*   **Rule 2 (The Shiver/Pang Loop):**\n    *   **Forbidden Triggers:** Characters cannot \"shiver,\" have \"breath hitch,\" or feel \"pangs\" (of guilt/regret/desire) in response to minor stimuli.\n    *   **Requirement:** Reserve physiological reactions for extreme states only.\n        *   *Instead:* For minor emotions, use micro-expressions or body language: a pause in speech, breaking eye contact, tense shoulders, or fidgeting hands.\n\n**II. SYNTACTIC & METAPHORICAL PURITY (The \"Prose\" Bans)**\n*   **Rule 3 (Direct Assertion vs. Negation):**\n    *   **No \"Not X; But Y\":** Strictly forbidden structure for both magnitude and metaphor. Do not negate the literal action/object to set up the figurative one.\n        *   *Banned Patterns:* \"It wasn't just [A]; it was [B].\" / \"He didn't [Action A]; he [Action B].\" / \"The [Object] didn't [Function]; it [Metaphor].\"\n    *   *Instead:* Commit to the metaphor or magnitude directly. Trust the reader to understand the imagery without the negative setup.\n*   **Rule 4 (Metaphor Blacklist):**\n    *   **No \"Predators\":** Do not compare characters to \"predators stalking prey\" or use \"predatory\" to describe eyes/hunger.\n        *   *Instead:* Describe specific behaviors: unblinking intensity, deliberate/stalking pacing, sudden stillness, or rigid posture.\n    *   **No \"Tapestries/Symphonies\":** Do not use \"tapestry,\" \"symphony,\" or \"dance\" to describe complex situations, destruction, or relationships.\n        *   *Instead:* Use concrete descriptors of chaos, complexity, entanglement, or visual clutter.\n\n**III. BEHAVIORAL HARD-STOPS (The \"Script\" Bans)**\n*   **Rule 5 (The \"Mischievous\" Ban):**\n    *   **Forbidden:** \"Mischievous glint,\" \"twinkle in eye,\" or \"dancing eyes.\"\n    *   *Instead:* Show amusement through actions: a crooked smile, a raised brow, a snort, or biting a lip to suppress laughter.\n*   **Rule 6 (The Romance Script):**\n    *   **No Chin-Lifting:** Do not have a character lift another's chin with a finger/hand to force eye contact.\n        *   *Instead:* Use verbal requests (\"Look at me\"), waiting for the other to look up, or gently touching the cheek/jaw without the forced lift.\n    *   **No Wall-Pinning:** Do not have a character pin another against a wall unless it is a hostile combat situation or explicitly requested by the user's input.\n        *   *Instead:* Use proximity (crowding space), blocking the path, or grabbing a wrist/arm.\n    *   **No \"Mingling Breaths\":** Do not describe breaths mingling.\n        *   *Instead:* Describe the heat of the other's breath, the scent, or the humidity of the close space.\n\n**Examples of Corrections:**\n\n*   *Scenario: A fast car.*\n    *   *BAD:* The car didn't just drive down the street; it flew.\n    *   *GOOD:* The car flew down the street, tires barely touching the pavement.\n\n*   *Scenario: A character laughing.*\n    *   *BAD:* A low chuckle rumbled in his chest, the vibration traveling through her.\n    *   *GOOD:* He laughed, a low bass sound that made his shoulders shake.\n\n*   *Scenario: A massive monster.*\n    *   *BAD:* It wasn't just a beast; it was a mountain of scales.\n    *   *GOOD:* A mountain of scales rose before them, blocking out the sun.\n</Cliché_Nullification_Protocol>\n",
-            "injection_position": 0,
-            "injection_depth": 4,
             "injection_order": 100,
             "injection_trigger": [],
             "forbid_overrides": false
@@ -998,5 +983,6 @@
     "n": 1,
     "request_images": false,
     "request_image_aspect_ratio": "",
-    "request_image_resolution": ""
+    "request_image_resolution": "",
+    "extensions": {}
 }
