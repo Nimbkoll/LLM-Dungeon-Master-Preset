@@ -2,7 +2,9 @@ Right now, I need you to compress a summary.
 
 We must keep the structure the same, but compress the amount of details especially in the `Major Events`. 
 
-We can keep the dead characters, but remove unneeded personality details.  
+We can keep the dead characters, but remove unneeded personality details from dead characters.
+
+Alive characters MUST retain personality details.
 
 We can also compress some of the `Major Actions Performed by Characters` (e.g., instead of "punched a pirate + kicked a pirate + shot a pirate" it can just be "fought 3 pirates")
 
